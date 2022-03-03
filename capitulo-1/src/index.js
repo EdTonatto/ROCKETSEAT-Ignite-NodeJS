@@ -60,6 +60,14 @@ app.put("/account/:cpf", verifyIfExistsAccountCPF, (request, response) => {
     return response.status(201).send()
 })
 
+app.delete("/account/:cpf", verifyIfExistsAccountCPF, (request, response) => {
+    const {customer} = request
+
+    customers.splice(customer, 1)
+
+    return response.status(204).send()
+})
+
 app.get("/account/:cpf", verifyIfExistsAccountCPF, (request, response) => {
     const {customer} = request
     return response.json(customer)
