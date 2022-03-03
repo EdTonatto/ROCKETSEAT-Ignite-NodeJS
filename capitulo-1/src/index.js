@@ -73,6 +73,18 @@ app.post("/deposit/:cpf", verifyIfExistsAccountCPF, (request, response) => {
     return response.status(201).send()
 })
 
+app.get("/statement/:cpf/date", verifyIfExistsAccountCPF, (request, response) => {
+    const {date} = request.query
+    const {customer} = request
+
+    const dateFormat = new Date(date + " 00:00")
+    const statement = customer.statement.filter(
+        (statement) => statement.created_at.toDateString() === new Date(dateFormat).toDateString()
+    )     
+
+    return response.json(statement)
+})
+
 app.post("/withdraw/:cpf", verifyIfExistsAccountCPF, (request, response) => {
     const {amount} = request.body
     const {customer} = request
