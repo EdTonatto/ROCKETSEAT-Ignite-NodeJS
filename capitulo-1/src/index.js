@@ -51,6 +51,14 @@ app.post("/account", (request, response) => {
     return response.status(201).send();
 })
 
+app.put("/account/:cpf", verifyIfExistsAccountCPF, (request, response) => {
+    const {name} = request.body
+    const {customer} = request
+
+    customer.name = name
+
+    return response.status(201).send()
+})
 // app.use(verifyIfExistsAccountCPF) //Pode chamar um middleware desta forma, sera aplicado para todos os endpoints seguintes a este comando.
 app.get("/statement/:cpf", verifyIfExistsAccountCPF, (request, response) => {
     const {customer} = request
