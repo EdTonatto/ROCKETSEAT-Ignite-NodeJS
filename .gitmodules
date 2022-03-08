@@ -1,3 +1,6 @@
 [submodule "capitulo-1/desafio-1/ROCKETSEAT-Ignite-NodeJS-Cap1-Desafio1"]
 	path = capitulo-1/desafio-1/ROCKETSEAT-Ignite-NodeJS-Cap1-Desafio1
 	url = https://github.com/EdTonatto/ROCKETSEAT-Ignite-NodeJS-Cap1-Desafio1
+[submodule "capitulo-1/desafio-2/ROCKETSEAT-Ignite-NodeJS-Cap1-Desafio2"]
+	path = capitulo-1/desafio-2/ROCKETSEAT-Ignite-NodeJS-Cap1-Desafio2
+	url = https://github.com/EdTonatto/ROCKETSEAT-Ignite-NodeJS-Cap1-Desafio2
