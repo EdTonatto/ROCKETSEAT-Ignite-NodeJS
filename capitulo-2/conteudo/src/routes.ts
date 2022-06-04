@@ -8,5 +8,10 @@ export function createCourse(request: Request, response: Response){
         educator: "Educator Name"
     });
 
+    CreateCourseService.execute({
+        name: "NodeJS - Turma 2", 
+        educator: "Educator Name"
+    });
+
     return response.send();
 }
