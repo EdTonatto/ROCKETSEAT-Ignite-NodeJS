@@ -7,6 +7,7 @@ const PostgresDataSource = new DataSource({
   username: 'docker',
   password: 'ignite',
   database: 'rentx',
+  entities: ['./src/modules/**/entities/*.ts'],
   migrations: ['./src/database/migrations/*.ts'],
 });
 
