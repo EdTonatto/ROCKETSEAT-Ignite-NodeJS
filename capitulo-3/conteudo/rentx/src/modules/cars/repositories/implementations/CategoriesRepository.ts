@@ -10,15 +10,8 @@ class CategoriesRepository implements ICategoriesRepository {
 
   private static INSTANCE: CategoriesRepository;
 
-  private constructor() {
+  constructor() {
     this.repository = getRepository(Category);
-  }
-
-  public static getInstance() {
-    if (!CategoriesRepository.INSTANCE) {
-      CategoriesRepository.INSTANCE = new CategoriesRepository();
-    }
-    return CategoriesRepository.INSTANCE;
   }
 
   async create({ name, description }: ICreateCategoryDTO): Promise<void> {
