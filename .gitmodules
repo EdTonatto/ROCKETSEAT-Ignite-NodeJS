@@ -16,3 +16,6 @@
 [submodule "capitulo-3/desafio-1/ROCKETSEAT-Ignite-NodeJS-Cap3-Desafio1"]
 	path = capitulo-3/desafio-1/ROCKETSEAT-Ignite-NodeJS-Cap3-Desafio1
 	url = https://github.com/EdTonatto/ROCKETSEAT-Ignite-NodeJS-Cap3-Desafio1
+[submodule "capitulo-3/desafio-2/ROCKETSEAT-Ignite-NodeJS-Cap3-Desafio2"]
+	path = capitulo-3/desafio-2/ROCKETSEAT-Ignite-NodeJS-Cap3-Desafio2
+	url = https://github.com/EdTonatto/ROCKETSEAT-Ignite-NodeJS-Cap3-Desafio2
