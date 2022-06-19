@@ -1,0 +1,4 @@
+Comando utilizado para criar migration 
+  yarn typeorm migration:create <caminho-onde-arquivo-sera-gerado/nome-arquivo>
+Comando utilizado para dar run no migration:
+  yarn typeorm migration:run -d <caminho-para-datasource>
