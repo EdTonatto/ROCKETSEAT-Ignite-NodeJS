@@ -7,7 +7,6 @@ export async function ensureAdmin(
   response: Response,
   next: NextFunction,
 ) {
-  console.log('Teste ensureAdmin');
   const { id } = request.user;
 
   const usersRepository = new UsersRepository();
