@@ -2,3 +2,8 @@ Comando utilizado para criar migration
   yarn typeorm migration:create <caminho-onde-arquivo-sera-gerado/nome-arquivo>
 Comando utilizado para dar run no migration:
   yarn typeorm migration:run -d <caminho-para-datasource>
+-----
+Comando utilizado para subir as imagens para o docker
+  docker-compose up -d
+Comando utilizado para ver log do container
+  docker logs <container> -f
